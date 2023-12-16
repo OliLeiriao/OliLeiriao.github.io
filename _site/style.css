@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    flex-wrap: wrap;
+  }
+  
+  .navbar a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar a {
+      flex: 100%;
+      margin: 5px 0;
+    }
+  }
