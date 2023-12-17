@@ -1,23 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1.animated-title {
+    text-align: center;
+}
+
+.navbar {
     display: flex;
     justify-content: center;
     background-color: #f8f9fa;
     flex-wrap: wrap;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     margin: 15px;
     text-decoration: none;
     color: black;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .navbar a {
-      flex: 100%;
-      margin: 5px 0;
+        flex: 100%;
+        margin: 5px 0;
     }
-  }
+}
+
+.animated-title {
+    animation: fadeIn 2s forwards;
+}
+
+.navbar a {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.navbar a:nth-child(1) {
+    animation-delay: 2s; /* Delay equal to the duration of the title animation */
+}
+
+.navbar a:nth-child(2) {
+    animation-delay: 3s; /* 1 second after the first link */
+}
+
+.navbar a:nth-child(3) {
+    animation-delay: 4s; /* 1 second after the second link */
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.other-page-navbar a {
+    opacity: 1;
+    animation: none;
+}
