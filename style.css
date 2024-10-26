@@ -18,6 +18,20 @@ header {
   background-color: #f8f9fa;
 }
 
+/* Bullet styling */
+ul{
+  list-style-type: square;
+  padding: 0;
+  margin: 0;
+}
+
+/* Additional styles to handle aspect ratio */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Title styling */
 .title {
   font-size: 24px;
@@ -60,8 +74,72 @@ header {
   margin: 0 auto; /* Center the image */
 }
 
-p{
+.home-image-description{
   width: 60%;
   margin: 20px auto;
   text-align: center;
+}
+
+.profile-container {
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+.profile-image{
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  position: relative;
+  top: 50px;
+}
+
+.profile-bio{
+  top: 200px;
+  word-wrap: break-word;
+}
+
+.experience-list {
+  margin: 10px;
+  position: relative;
+  left: 10px;
+  width: 60%;
+  line-height: 1.6;
+}
+
+.photo-bio{
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.art-bio{
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#galleryImage{
+  width: 50%;
+  margin: 10px;
+}
+
+#galleryPortraitImage {
+  width: 30%; /* Smaller width for portrait images */
+  margin: 10px;
+}
+
+.portrait-container {
+  width: 90%;
+  margin: 10px auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
