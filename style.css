@@ -1,58 +1,67 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1.animated-title {
-    text-align: center;
+/* Ensure body and html take up full viewport height */
+html, body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
 }
 
+/* Header styling */
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navbar styling */
 .navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #f8f9fa;
-    flex-wrap: wrap;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar a {
-    margin: 15px;
-    text-decoration: none;
-    color: black;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-    .navbar a {
-        flex: 100%;
-        margin: 5px 0;
-    }
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.animated-title {
-    animation: fadeIn 2s forwards;
+/* Image container styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for white space */
 }
 
-.navbar a {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
+.main-image {
+  max-width: 90%; /* Ensure the image does not take up the full width */
+  max-height: 80vh; /* Ensure the image does not take up the full height */
+  object-fit: contain;
+  margin: 0 auto; /* Center the image */
 }
 
-.navbar a:nth-child(1) {
-    animation-delay: 2s; /* Delay equal to the duration of the title animation */
-}
-
-.navbar a:nth-child(2) {
-    animation-delay: 3s; /* 1 second after the first link */
-}
-
-.navbar a:nth-child(3) {
-    animation-delay: 4s; /* 1 second after the second link */
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.other-page-navbar a {
-    opacity: 1;
-    animation: none;
+p{
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
 }
