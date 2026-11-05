@@ -34,47 +34,15 @@
         <h2>Art</h2>
         <p>When I'm done staring at screens, I enjoy painting.</p>
     </div>
-      
-      <div class="gallery-container">
-        <img id="galleryImage" src="Art&Img\Art\Japan_OL(2024).jpg" alt="Japan_OL">
-      </div>
-      <p class="art-bio"><Strong>Japan</Strong> (2024), 36"x24", Acrylic on Canvas.</p><br>
+    <main class="art-gallery-page">
+      <div id="art-gallery" aria-live="polite">Loading artwork...</div>
+    </main>
 
-      <div class="portrait-container">
-        <img id="galleryPortraitImage" src="Art&Img/Art/Love_OL(2023).jpg" alt="Love_OL">
-        <img id="galleryPortraitImage" src="Art&Img\Art\HeadHunters_OL(2024).jpg" alt="HH_OL">
-      </div>
-      <p class="art-bio">(left) <Strong>Love</Strong> (2023), 13.5"x16.5", Acrylic on Mixed Media Paper.</p>
-      <p class="art-bio">(right) <Strong>Head Hunters</Strong> (2024), 13.5"x16.5", Acrylic on Mixed Media Paper.</p>
+    <dialog id="art-lightbox" class="photo-lightbox" aria-label="Expanded artwork">
+      <button class="photo-lightbox-close" type="button" aria-label="Close expanded artwork">&times;</button>
+      <img class="photo-lightbox-image" alt="">
+    </dialog>
 
-      <div class="gallery-container">
-        <img id="galleryImage" src="Art&Img\Art\Nostalgia_OL(2024).jpg" alt="Nostalgia_OL">
-      </div>
-      <p class="art-bio"><Strong>Nostalgia</Strong> (2024), 40"x30", Acrylic on Canvas.</p><br>
-
-      <div class="gallery-container">
-        <img id="galleryImage" src="Art&Img\Art\Labradorite_OL(2024).jpg" alt="Labradorite_OL">
-      </div>
-      <p class="art-bio"><Strong>Labradorite</Strong> (2024), 30"x20", Acrylic on Canvas.</p><br>
-
-      <div class="portrait-container">
-        <img id="galleryPortraitImage" src="Art&Img\Art\GaspardDeLaNuit_OL(2024).jpg" alt="GdlN_OL">
-        <img id="galleryPortraitImage" src="Art&Img\Art\Amazonite_OL(2024).jpg" alt="Amazonite_OL">
-      </div>
-      <p class="art-bio">(left) <Strong>Gaspard de la Nuit</Strong> (2024), 18"x24", Acrylic on Canvas.</p>
-      <p class="art-bio">(right) <Strong>Amazonite</Strong> (2024), 18"x24", Acrylic on Canvas.</p>
-
-      <div class="gallery-container">
-        <img id="galleryImage" src="Art&Img\Art\GreenOnyx_OL(2024).jpg" alt="GreenOnyx_OL">
-      </div>
-      <p class="art-bio"><Strong>Green Onyx</Strong> (2023), 24"x18", Acrylic on Canvas.</p><br>
-
-      <div class="portrait-container">
-        <img id="galleryPortraitImage" src="Art&Img\Art\RomeoAndJuliet_OL(2024).jpg" alt="RJ_OL">
-        <img id="galleryPortraitImage" src="Art&Img\Art\Tiles_OL(2024).jpg" alt="HH_OL">
-      </div>
-      <p class="art-bio">(left) <Strong>Romeo & Juliet</Strong> (2024), 13.5"x16.5", Acrylic on Mixed Media Paper.</p>
-      <p class="art-bio">(right) <Strong>Tiles</Strong> (2024), 18"x24", Acrylic on Canvas.</p>
-      
-
+    <script src="art.js" defer></script>
+  </body>
 </html>

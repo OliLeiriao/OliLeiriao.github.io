@@ -36,79 +36,15 @@
       <p><strong>Cameras:</strong> Nikon FE2, Pentax Espio</p>
     </div>
     
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Lisbon1.jpg" alt="Lisbon 1">
-      <img id="galleryImage" src="Art&Img/Photos/Lisbon2.jpg" alt="Lisbon 2">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Lisbon4.jpg" alt="Lisbon 4">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Lisbon5.jpg" alt="Lisbon 5">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Brussels1.jpg" alt="Brussels 1">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Bruges1.jpg" alt="Bruges 1">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Bruges2.jpg" alt="Bruges 2">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Lisbon3.jpg" alt="Lisbon 3">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Barcelona1.jpg" alt="Barcelona 1">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Barcelona2.jpg" alt="Barcelona 2">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/London1.jpg" alt="London 1">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Toronto1.jpg" alt="Toronto 1">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Montreal1.jpg" alt="Montreal 1">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Pemberton1.jpg" alt="Pemberton 1">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Toronto2.jpg" alt="Toronto 2">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Toronto3.jpg" alt="Toronto 3">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Montreal2.jpg" alt="Montreal 2">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Cuba3.jpg" alt="Cuba 3">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Cuba4.jpg" alt="Cuba 4">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Cuba1.jpg" alt="Cuba 1">
-      <img id="galleryImage" src="Art&Img/Photos/Cuba2.jpg" alt="Cuba 2">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img/Photos/Montreal3.jpg" alt="Montreal 3">
-      <img id="galleryImage" src="Art&Img\Photos\Toronto4.JPG" alt="Toronto 4">
-      <img id="galleryImage" src="Art&Img\Photos\Kyoto1.jpg" alt="Kyoto 1">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo1.jpg" alt="Tokyo 1">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo2.jpg" alt="Tokyo 2">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img\Photos\Kyoto2.jpg" alt="Kyoto 2">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo3.jpg" alt="Tokyo 3">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo4.jpg" alt="Tokyo 4">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img\Photos\Kyoto3.jpg" alt="Kyoto 3">
-    </div>
-    <div class="portrait-container">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo5.jpg" alt="Tokyo 5">
-      <img id="galleryPortraitImage" src="Art&Img/Photos/Tokyo6.jpg" alt="Tokyo 6">
-    </div>
-    <div class="gallery-container">
-      <img id="galleryImage" src="Art&Img\Photos\Tokyo7.jpg" alt="Tokyo 7">
-    </div>
+    <main class="photo-gallery-page">
+      <div id="photo-gallery" aria-live="polite">Loading photos...</div>
+    </main>
 
+    <dialog id="photo-lightbox" class="photo-lightbox" aria-label="Expanded photo">
+      <button class="photo-lightbox-close" type="button" aria-label="Close expanded photo">&times;</button>
+      <img class="photo-lightbox-image" alt="">
+    </dialog>
+
+    <script src="photos.js" defer></script>
   </body>
 </html>
